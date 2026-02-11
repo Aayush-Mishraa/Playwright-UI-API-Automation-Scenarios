@@ -17,8 +17,8 @@ test("Login into new Applcation", async ({ page }) => {
     
     // ===== LOCATOR DEFINITIONS using GetBy methods (recommended over CSS/XPath) =====
     // getByPlaceholder: Locates element by its placeholder attribute
-    const username = page.getByPlaceholder("#userEmail")
-    const password = page.getByPlaceholder("#userPassword")
+    const username = page.getByPlaceholder("email@example.com")
+    const password = page.getByPlaceholder("enter your passsword")
     
     // getByRole: Locates element by accessibility role (more reliable than CSS selectors)
     const loginButton = page.getByRole("button", { name: "Login" })
