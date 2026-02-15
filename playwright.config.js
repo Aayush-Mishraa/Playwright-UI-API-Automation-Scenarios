@@ -10,13 +10,16 @@ const config = ({
   testDir: './tests',
   timeout: 40 * 1000,
   expect: {
-    timeout: 40 * 1000,
+    timeout: 5000,
 
   },
   reporter: 'html',
   use: {
     browserName: 'chromium',
-    headless: false
+    headless: false,
+    screenshot: 'only-on-failure',//on/off/only-on-failure
+    trace: 'retain-on-failure',//on/off/retain-on-failure
+    
 
 
 

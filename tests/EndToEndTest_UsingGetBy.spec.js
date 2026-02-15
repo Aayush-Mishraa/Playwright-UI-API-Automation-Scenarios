@@ -25,7 +25,7 @@ test("Login into new Applcation", async ({ page }) => {
     
     // locator: Used for complex selectors that getBy methods don't cover
     const products = page.locator(".card-body")
-    
+
     // LOGIN SECTION - Using getBy methods for better readability and maintainability
     // ===== LOGIN SECTION =====
     // Fill email field
@@ -86,5 +86,4 @@ test("Login into new Applcation", async ({ page }) => {
     // Verify success message appears after order placement
     // This confirms the order was successfully created
     await expect(page.getByText(" Thankyou for the order. ")).toBeVisible()
-
 })
